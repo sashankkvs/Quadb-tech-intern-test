@@ -1,0 +1,104 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hoflinfo</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo" style="background-color: #0078aa">
+        <img
+          src="https://hodlinfo.com/static/media/HODLINFO.8f78fc06.png"
+          alt="HODLinfo Logo"
+          style="height: 80px; width: 300px"
+        />
+      </div>
+      <div class="currency-dropdown">
+        <div class="dropdown">
+          <button id="currencyBtn" class="dropbtn">INR</button>
+          <div class="dropdown-content">
+            <a href="#" id="inrOption">INR</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button id="cryptoBtn" class="dropbtn">BTC</button>
+          <div class="dropdown-content">
+            <a href="#" id="btcOption">BTC</a>
+            <a href="#" id="ethOption">ETH</a>
+            <a href="#" id="xrpOption">XRP</a>
+            <a href="#" id="ltcOption">LTC</a>
+            <a href="#" id="bchOption">BCH</a>
+            <a href="#" id="adaOption">ADA</a>
+            <a href="#" id="dotOption">DOT</a>
+            <a href="#" id="linkOption">LINK</a>
+            <a href="#" id="bnbOption">BNB</a>
+          </div>
+        </div>
+        <button class="buy-btn">Buy BTC</button>
+      </div>
+
+      <div class="top-right-container">
+        <div class="timer-circle">
+          <div id="countdown">60</div>
+        </div>
+
+        <button class="connect-telegram">
+          <img src="telegram.png" alt="Telegram Icon" />
+          Connect Telegram
+        </button>
+
+        <label class="switch">
+          <input type="checkbox" id="darkModeToggle" />
+          <span class="slider"></span>
+        </label>
+      </div>
+    </header>
+    <main>
+      <div class="table-container">
+        <table id="cryptoTable">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>NAME</th>
+              <th>LAST</th>
+              <th>BUY</th>
+              <th>SELL</th>
+              <th>VOLUME</th>
+              <th>BASE_UNIT</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+  <hr color="darkslategrey" />
+  <footer
+    style="
+      display: flex;
+      justify-content: space-between;
+      background-color: #0078aa;
+      padding: 10px 0;
+    "
+  >
+    <p style="margin: 0; color: whitesmoke">&copy; 2023 Hodlinfo.com</p>
+    <p style="margin: 0; color: whitesmoke">Support</p>
+    <button
+      id="homeScreenButton"
+      onmouseover="this.style.backgroundColor='#aed2ff';"
+      onmouseout="this.style.backgroundColor='transparent';"
+      style="
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 10px 20px;
+        background-color: transparent;
+      "
+    >
+      Add Hodlinfo to Home Screen
+    </button>
+  </footer>
+</html>
