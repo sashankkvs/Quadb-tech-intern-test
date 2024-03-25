@@ -1,4 +1,4 @@
-# Quadb-tech-intern-test
+# Cryptocurrency current price display
 
 The project was done by using html, css, Javascript for frontend and node js(express.js) was used for backend.
 
